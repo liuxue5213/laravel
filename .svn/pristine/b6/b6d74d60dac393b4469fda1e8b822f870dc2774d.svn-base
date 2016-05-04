@@ -1,0 +1,70 @@
+<?php $__env->startSection('title'); ?>
+测试
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+  <div class="container-fluid">
+      <div class="row">
+        <div class=" main">
+          <h1 class="page-header">订单查询</h1>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>手机号码</th>
+                  <th>交易ID</th>
+                  <th>创建时间</th>
+                  <th>使用运营商通道</th>
+                  <th>运营商订单ID</th>
+                  <th>运营商通道ID</th>
+                  <th>状态</th>
+                  <th>状态码</th>
+                  <th>状态描述</th>
+                  <th>订单完成时间</th>
+                  <th>该次订购对应的渠道列表</th>
+                  <th>流量规格</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              <?php foreach($data as $d): ?>
+                <tr>
+                  <td><?php echo e($d->Mobile); ?></td>
+                  <td><?php echo e($d->TradeID); ?></td>
+                  <td><?php echo e($d->CreateTime); ?></td>
+                  <td><?php echo e($d->channelName); ?></td>
+                  <td><?php echo e($d->OrderID); ?></td>
+                  <td><?php echo e($d->channelId); ?></td>
+                  <td>
+
+                  <?php if( $d->Status == 0): ?> 
+                  提交运营商失败
+                  <?php elseif( $d->Status == 1): ?>
+                  提交运营商失败
+                  <?php elseif($d->Status == 2 ): ?>
+                  订购成功
+                  <?php else: ?>
+                  订购失败
+                  <?php endif; ?>
+                 
+                  </td>
+                  <td><?php echo e($d->StatusCode); ?></td>
+                  <td><?php echo e($d->StatusDesc); ?></td>
+                  <td><?php echo e($d->FinishTime); ?></td>
+                  <td><?php echo e($d->ChannelIDs); ?></td>
+                  <td><?php echo e($d->Flow); ?></td>
+                </tr>
+              <?php endforeach; ?>
+              </tbody>
+            </table>
+            
+            <div style="text-align:center">
+            <?php echo $data->render(); ?>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+<?php $__env->stopSection(); ?>    
+<?php echo $__env->make('test.base', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

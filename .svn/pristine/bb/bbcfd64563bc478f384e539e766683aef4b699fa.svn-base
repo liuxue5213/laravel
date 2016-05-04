@@ -1,0 +1,49 @@
+<?php $__env->startSection('hacker_header'); ?>
+<!--
+  _  _
+ | |(_)
+ | | _  _   _ __  __ _   _   ___
+ | || || | | |\ \/ /| | | | / _ \
+ | || || |_| | >  < | |_| ||  __/
+ |_||_| \__,_|/_/\_\ \__,_| \___|
+-->
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('head_css'); ?>
+    <link href="./media/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="./media/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+
+ 
+<?php echo $__env->yieldSection(); ?>
+
+<?php $__env->startSection('head_js'); ?>
+@parent
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('body'); ?>
+<!-- 主要内容-->
+<?php $__env->startSection('content'); ?>
+<?php echo $__env->yieldSection(); ?>
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('afterBody'); ?>
+    <?php $__env->startSection('extraPlugin'); ?>
+    <?php echo $__env->yieldSection(); ?><?php /* 引入额外依赖JS插件 */ ?>
+    <script src="./media/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="./media/js/bootstrap.min.js" type="text/javascript"></script>
+<?php $__env->stopSection(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+<?php echo $__env->make('layout._base', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

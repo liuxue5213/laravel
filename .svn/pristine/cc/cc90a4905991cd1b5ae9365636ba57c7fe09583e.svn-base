@@ -1,0 +1,10 @@
+<?php $__env->startSection('title'); ?>
+系统设置
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('admin_content'); ?>
+setting
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('admin.widgets._back', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

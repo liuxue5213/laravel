@@ -1,0 +1,10 @@
+<?php $__env->startSection('title'); ?>
+<?php echo e(Session::get('name')); ?>的邮箱
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('admin_content'); ?>
+email
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('admin.widgets._back', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

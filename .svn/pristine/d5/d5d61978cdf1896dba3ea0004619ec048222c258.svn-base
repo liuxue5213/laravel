@@ -1,0 +1,17 @@
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p><?php echo e($name); ?>，您好</p>
+                    <p>这是今天的数据     <?php echo e($mh); ?></p><br>
+                      <img src="<?php echo e($message->embed('./email.jpg')); ?>" width="600" height="480"><br><br>
+                    <p class="text-center">Copyright ©2015,JohnScott,All rights reserved 保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('_layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

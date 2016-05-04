@@ -1,0 +1,9 @@
+<?php $__env->startSection('title'); ?>
+<?php echo e(Session::get('name')); ?>的聊天室
+
+
+<?php $__env->startSection('admin_content'); ?>
+talking
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('admin.widgets._back', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

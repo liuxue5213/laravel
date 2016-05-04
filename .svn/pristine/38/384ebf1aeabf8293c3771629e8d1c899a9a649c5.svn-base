@@ -1,0 +1,39 @@
+<?php $__env->startSection('title'); ?>
+    <?php echo e(Session::get('name')); ?>'s Blog
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('head_css'); ?>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.wpke.net/wp-content/themes/abctheme/style.css" media="screen" type="text/css">
+    <script type="text/javascript" src="https://www.wpke.net/wp-content/themes/abctheme/js/jquery.js"></script>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+    <!--  导航栏  -->
+    <?php echo $__env->make('index.weibo.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+    <article class="mod-archive">
+        <div class="mod-archive__item">
+
+        <div id="2015" class="mod-archive__year">2016</div>
+    
+        <ul class="mod-archive__list">
+            <?php foreach($blog as $b): ?>
+            <li>
+                <time class="mod-archive__time" datetime="<?php echo e($b->updated_at); ?>"><?php echo e($b->updated_at); ?></time> 
+                <span>—</span>
+                <a href="<?php echo e(url('/weibo/show/'.$b->id)); ?>" title="<?php echo e($b->post_title); ?>"><?php echo e($b->post_title); ?></a>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+
+        </div>
+    </article>
+
+    <?php echo $blog->render(); ?>
+
+
+    <?php echo $__env->make('layout.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout._index', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

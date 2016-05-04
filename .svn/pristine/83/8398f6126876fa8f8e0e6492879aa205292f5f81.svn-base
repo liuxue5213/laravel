@@ -1,0 +1,55 @@
+<?php $__env->startSection('title'); ?>
+    <?php foreach($info as $i): ?> 
+        <?php echo e($i->title); ?>
+
+    <?php endforeach; ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('head_css'); ?>
+<link href="<?php echo e(asset('/css/home.css')); ?>" rel="stylesheet" type="text/css"/>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>   
+        <div class="willerce">
+            <img class="avatar" src="<?php echo e(asset('/images/logo.jpg')); ?>" alt="" width="128" height="128">
+
+            <?php foreach($info as $i): ?>
+                <h1><?php echo e($i->title); ?></h1>
+                <p>Work @ <?php echo e($i->company); ?>, <br>
+                    <?php echo e($i->jobs); ?>. More <a href="<?php echo e(url('/about/'.$sid)); ?>">About Me</a> 
+                </p>
+                <p style="height: 24px; line-height: 24px; margin: 15px 0;">
+                    <img style="vertical-align: bottom; margin-right: 10px;" src=" <?php echo e(asset('/images/address.png')); ?>"><?php echo e($i->city); ?> . <?php echo e($i->country); ?>
+
+                </p>
+            <?php endforeach; ?>
+
+            <p class="nav">
+                <?php foreach($nav as $n): ?>
+                    <a href="<?php echo e(url('/'.$n->slug.'/'.$user_id)); ?>">
+                    <?php if($sid==$user_id): ?><span>My</span><?php endif; ?>
+                    <?php echo e($n->title); ?>
+
+                    </a>
+                <?php endforeach; ?>
+
+                <?php if(Auth::guest()): ?>
+                    <a href="<?php echo e(url('auth/login')); ?>">Login</a>
+                <?php else: ?>
+                    <?php if($sid!=$user_id): ?>
+            <a href="<?php echo e(url('/home/'.$sid)); ?>">My Home</a>
+                    <?php else: ?>
+                <a href="<?php echo e(url('/admin')); ?>">Admin</a>
+                    <?php endif; ?>
+                    <a href="<?php echo e(url('auth/logout')); ?>">logout</a>
+                <?php endif; ?>
+            </p>
+
+        </div>
+<?php $__env->stopSection(); ?>
+
+
+
+
+
+<?php echo $__env->make('layout._index', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

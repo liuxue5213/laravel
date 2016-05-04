@@ -1,0 +1,35 @@
+<?php $__env->startSection('title'); ?>
+    JohnScott1989
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('head_css'); ?>
+<link href="<?php echo e(asset('/css/home.css')); ?>" rel="stylesheet" type="text/css"/>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+ <div class="willerce">
+    <img class="avatar" src="<?php echo e(asset('/images/logo.jpg')); ?>" alt="" width="128" height="128">
+    <h1>JohnScott1989</h1>
+    <p>Work @ Beijing DataComx Science and Technology, <br>PHP Programming Team. More <a href="<?php echo e(url('/about/'.$user_id)); ?>">About Me</a> </p>
+    <p style="height: 24px; line-height: 24px; margin: 15px 0;">
+        <img style="vertical-align: bottom; margin-right: 10px;" src="<?php echo e(asset('/images/address.png')); ?>">Beijing . China
+    </p>
+    <p class="nav">
+    <?php foreach($nav as $n): ?>
+        <a href="<?php echo e(url('/'.$n->slug.'/1')); ?>"><?php echo e($n->title); ?></a>
+    <?php endforeach; ?>
+        <?php if(Auth::guest()): ?>
+            <a href="<?php echo e(url('auth/login')); ?>">Login</a>
+        <?php else: ?>
+            <?php if($sid != $user_id): ?>
+        <a href="<?php echo e(url('/home/'.$sid )); ?>">My Home</a>
+            <?php else: ?>
+        <a href="<?php echo e(url('/admin')); ?>">Admin</a>
+        <?php endif; ?>
+        <a href="<?php echo e(url('auth/logout')); ?>">logout</a>
+    <?php endif; ?>
+    </p>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout._index', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

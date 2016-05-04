@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$title}</title>
+<link rel="Shortcut Icon" href="/images/icon_favicon.png" />
+<link href="/css/globel.css" type="text/css" rel="stylesheet">
+<link href="/jqueryeasy/themes/gray/easyui.css" rel="stylesheet" type="text/css">
+<link href="/jqueryeasy/themes/icon.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/js/common.js" language="JavaScript"></script>
+<script type="text/javascript" src="/jqueryeasy/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/js/common-utils.js" language="JavaScript"></script>
+<script type="text/javascript" src="/js/globle.js" language="JavaScript"></script>
+<script type="text/javascript" src="/js/usercommon.js" language="JavaScript"></script>
+<script type="text/javascript">
+    // JavaScript Document
+ function  Login() {
+        var username = $.trim($("#username").val()), password = $.trim($("#password").val());
+        if (username == "" || password == "") {
+            $.messager.alert('提示', '用户名密码不能为空!');
+            return false;
+        }
+        var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+            $.ajax({
+                type: 'post',
+                url: 'management/main',
+                data: {username:username,pwd:password,cst:CSRF_TOKEN},
+                dataType: 'json',
+                timeout: 90000,
+                headers: {
+                'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                },
+                success: function(data){
+                    alert(data);
+                    if(data.status==0){
+
+                    }else{
+
+                    }
+                },
+              success: function (o) {
+                if (o.isok != "false") {
+                    location.href = './management/main';
+                } else {
+                    $.messager.alert('提示', o.message);
+                    return false;
+                }
+            }
+                // async: true,
+                // error: function() { $("#alert_no").text('请稍后再试');
+            // }
+            })
+    }
+
+</script>
+<style type="text/css">
+.LoginHeader{ height:90px; border-bottom:1px solid #e2e2e2}
+.w1200Auto{width:1100px; margin-left:auto; margin-right:auto}
+.W620left{ width:620px; float:left;}
+.w340right{ width:340px; float:right}
+</style>
+    </head>
+<body style="background:0; background-color:#fff">
+
+<div class="LoginHeader">
+	<Div class="w1200Auto">
+    	<Div class="LoginLogo"><img src="/images/logo-menager.png" /></Div>
+    </Div>
+</div>
+<Div class="w1200Auto" id="IndexWarp" style="overflow:hidden; padding:50px 0 40px 0;">
+	<Div class="W620left">
+    	<img src="/images/loginbanner.jpg" width="620" />
+    </Div>
+	<Div class="w340right">
+    	<Div style="height:51px; width:338px; margin-left:auto; margin-right:auto; padding-bottom:20px;"><img src="/images/Login-title.png" width="338px" /></Div>
+    <Div style=" border:1px solid #d0e2ec; height:50px;margin-left:auto; margin-right:auto; background:#fff url(/images/usernameicn.gif) no-repeat 17px top ; border-radius:3px; ">
+                  <input type="text" name="name" id="username" value="" style="width:260px; height:50px; margin-left:70px; font-size:14px; background:none; border:0; margin-bottom:0" placeholder="请输入登录名称">
+                </Div>
+            <Div style="border:1px solid #d0e2ec; height:50px;margin-left:auto; margin-top:25px; margin-right:auto; background:#fff url(/images/pwdicn.gif) no-repeat 17px top ;  border-radius:3px;">
+                  <input type="password" name="password" id="password" value="" style="width:260px; height:50px; margin-left:70px; font-size:14px; background:none; border:0; margin-bottom:0" placeholder="请输入登录密码">
+                </Div>
+            <div style=" background:url(/images/loginbtn.png) no-repeat left top; cursor:pointer; margin-top:20px; width:337px; height:59px; clear:both; margin-left:auto; margin-right:auto" onclick="Login()" ></div>
+          </Div>
+    
+    </Div>
+</Div>
+<div style="height:95px; background-color:#eaeaea; clear:both; border-top:1p solid #e2e2e2;">
+
+	<p style="text-align:center; padding-top:20px; line-height:22px;">Copyright2013 All rights reserved 北京数讯达通信技术有限公司版权所有 京ICP备11048509号-4<br>公司地址：北京市丰台区菜户营甲88号2A座号楼708室 联系电话：010-63357560</p>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	var getDivH = $("#IndexWarp").height();
+	var getWH = $(window).height();
+	var cheig = getWH - 90 - 95 - 92; 
+	if(cheig > getDivH){
+		$("#IndexWarp").css({height:cheig})			
+	}
+		
+})
+document.onkeydown = function(e){
+    if(!e) e = window.event;//火狐中是 window.event
+    if((e.keyCode || e.which) == 13){
+        Login();
+    }
+}
+</script> 
+</body>
+</html>

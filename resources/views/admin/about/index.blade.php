@@ -1,0 +1,163 @@
+@extends('admin.widgets._back')
+
+@section('title')
+个人主页
+@endsection
+
+
+@section('admin_content')
+
+<div class="portlet box blue">
+    <div class="portlet-title">
+        <div class="caption"><i class="icon-reorder"></i>关于我</div>
+        <div class="tools">
+            <a href="javascript:;" class="collapse"></a>
+            <a href="javascript:;" class="reload"></a>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <!-- BEGIN FORM-->
+        <form action="/admin/about/save" class="horizontal-form" method="post">
+            <h3 class="form-section">完善个人信息</h3>
+            <div class="row-fluid">
+                <div class="span6 ">
+                    <div class="control-group">
+                        <label class="control-label" for="name">用户名</label>
+                        <div class="controls">
+                            <input type="text" id="name" class="m-wrap span12" placeholder="Li11m" name="name">
+                            <span class="help-block">This is inline help</span>
+                        </div>
+                    </div>
+                </div>
+                <!--/span-->
+                <div class="span6 ">
+                    <div class="control-group">
+                        <label class="control-label" for="phone">联系方式</label>
+                        <div class="controls">
+                            <input type="text" id="phone" class="m-wrap span12" name="phone" >
+                        </div>
+                    </div>
+                </div>
+                <!--/span-->
+            </div>
+            <!--/row-->
+         <div class="row-fluid">
+                <div class="span6 ">
+                    <div class="control-group">
+                        <label class="control-label" for="address">联系地址</label>
+                        <div class="controls">
+                            <input type="text" id="address" class="m-wrap span12" name="address">
+                        </div>
+                    </div>
+                </div>
+                <!--/span-->
+                <div class="span6 ">
+                    <div class="control-group">
+                        <label class="control-label" for="weixin_no">微信号</label>
+                        <div class="controls">
+                            <input type="text" id="weixin_no" class="m-wrap span12" name="weixin_no" >
+                        </div>
+                    </div>
+                </div>
+                <!--/span-->
+            </div>
+             <div class="row-fluid">
+                <div class="span6 ">
+                    <div class="control-group">
+                        <label class="control-label" for="blog">博客</label>
+                        <div class="controls">
+                            <input type="text" id="blog" class="m-wrap span12" name="blog">
+                        </div>
+                    </div>
+                </div>
+                <!--/span-->
+                <div class="span6 ">
+                    <div class="control-group">
+                        <label class="control-label" for="weibo">微博</label>
+                        <div class="controls">
+                            <input type="text" id="weibo" class="m-wrap span12" name="weibo" >
+                        </div>
+                    </div>
+                </div>
+                <!--/span-->
+            </div>
+            <!--/row-->
+            <h3 class="form-section">主页信息</h3>
+            <div class="row-fluid">
+                <div class="span6 ">
+                    <div class="control-group">
+                        <label class="control-label" for="company">公司</label>
+                        <div class="controls">
+                            <input type="text" id="company" class="m-wrap span12" name="company" >
+                        </div>
+                    </div>
+                </div>
+                <!--/span-->
+                <div class="span6 ">
+                    <div class="control-group">
+                       <label class="control-label" for="jobs">工作岗位</label>
+                        <div class="controls">
+                            <input type="text" id="jobs" class="m-wrap span12" name="jobs">
+                        </div>
+                    </div>
+                </div>
+                <!--/span-->
+            </div>
+            <div class="row-fluid">
+                <div class="span6 ">
+                    <div class="control-group">
+                        <label class="control-label" for="city">城市</label>
+                        <div class="controls">
+                            <input type="text" id="city" class="m-wrap span12" name="city" >
+                        </div>
+                    </div>
+                </div>
+                <!--/span-->
+                <div class="span6 ">
+                    <div class="control-group">
+                       <label class="control-label" for="country">国家</label>
+                        <div class="controls">
+                            <input type="text" id="country" class="m-wrap span12" name="country">
+                        </div>
+                    </div>
+                </div>
+                <!--/span-->
+            </div>
+
+     
+            <!--/row-->
+            <div class="row-fluid">
+                <div class="span6 ">
+                    <div class="control-group">
+                        <label class="control-label" for="title">标题</label>
+                        <div class="controls">
+                            <input type="text" id="title" class="m-wrap span12" name="title" >
+                        </div>
+                    </div>
+                </div>
+                <!--/span-->
+                <div class="span6 ">
+                    <div class="control-group">
+                        <label class="control-label" for="email">电子邮箱</label>
+                        <div class="controls">
+                         <div class="controls">
+                            <input type="text" id="email" class="m-wrap span12" name="email">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/span-->
+        </div>
+        <div class="form-actions">
+        <input type="hidden" name="_token" value="{{csrf_token()}}">
+            <button type="submit" class="btn blue"><i class="icon-ok"></i> 保存</button>
+            <button type="button" class="btn">取消</button>
+        </div>
+    </form>
+    <!-- END FORM-->
+</div>
+</div>
+
+
+
+@endsection

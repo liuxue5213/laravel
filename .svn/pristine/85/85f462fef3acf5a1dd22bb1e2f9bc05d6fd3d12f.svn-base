@@ -1,0 +1,46 @@
+<?php $__env->startSection('title'); ?>
+    weibo
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('head_css'); ?>
+    <link href="<?php echo e(asset('/css/about.css')); ?>" rel="stylesheet">
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+<header class="mod-head">
+    <h1 class="mod-head__title">
+        <a href="#">Johnscott1989</a>
+    </h1>
+    <div class="mod-head__logo">
+        <a href="">
+            <img class="avatar" src="<?php echo e(asset('/images/logo.jpg')); ?>" alt="" width="26" height="26">
+        </a>
+    </div>
+    <nav class="mod-head__nav">
+
+    <ul id="menu-%e8%8f%9c%e5%8d%95" class="mod-head__ul">
+    <?php foreach($nav as $n): ?>
+        <li id="menu-item-6" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6">
+        <a href="<?php echo e(url('/'.$n->slug)); ?>"><?php echo e($n->title); ?></a>
+        <span>·</span>
+        </li>
+    <?php endforeach; ?>
+        <li id="menu-item-6" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6">
+        <a href="<?php echo e(url('/auth/login')); ?>">Login</a>
+        </li>
+    </ul>   
+    </nav>
+</header>
+
+<article class="mod-post mod-post__type-page">
+    <div class="mod-post__entry">
+      <h1>微博待开放  博客请点 <a href="<?php echo e(url('/weibo/show/')); ?>">'这里'</a></h1>
+    </div>
+</article>
+
+<?php echo $__env->make('layout.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('layout._index', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

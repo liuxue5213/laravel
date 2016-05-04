@@ -1,0 +1,41 @@
+<?php $__env->startSection('hacker_header'); ?>
+<?php echo $__env->yieldSection(); ?><?php /* 头部申明区域 */ ?>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="renderer" content="webkit">
+    <?php /* 360浏览器使用webkit内核渲染页面 */ ?>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>" />
+    
+    <title>
+    <?php $__env->startSection('title'); ?> 主页<?php echo $__env->yieldSection(); ?><?php /* 页面标题 */ ?>
+    </title>
+
+    <?php $__env->startSection('meta'); ?>
+    <?php echo $__env->yieldSection(); ?><?php /* 添加一些额外的META申明 */ ?>
+
+    <?php $__env->startSection('head_css'); ?>
+    <?php echo $__env->yieldSection(); ?><?php /* head区域css样式表 */ ?>
+
+    <?php $__env->startSection('head_js'); ?>
+    <?php echo $__env->yieldSection(); ?><?php /* head区域javscript脚本 */ ?>
+
+    <link rel="shortcut icon" href="./favicon.ico">
+</head>
+<body <?php $__env->startSection('body_attr'); ?>class=""<?php echo $__env->yieldSection(); ?>>
+    <?php $__env->startSection('beforeBody'); ?>
+    <?php echo $__env->yieldSection(); ?><?php /*在正文之后填充一些东西 */ ?>
+
+    <?php $__env->startSection('body'); ?>
+    <?php echo $__env->yieldSection(); ?><?php /* 正文部分 */ ?>
+
+    <?php $__env->startSection('afterBody'); ?>
+    <?php echo $__env->yieldSection(); ?>
+</body>
+</html>
+
+<?php $__env->startSection('hacker_footer'); ?>
+<?php echo $__env->yieldSection(); ?><?php /* 尾部申明区域 */ ?>

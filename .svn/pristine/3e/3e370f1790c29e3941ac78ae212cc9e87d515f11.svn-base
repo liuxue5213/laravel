@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       
+        <link rel="shortcut icon" href="http://static.fanfou.com/favicon.ico">
+        <!-- <link rel="apple-touch-icon" href="http://static.fanfou.com/apple-touch-icon.png"> -->
+        <script type="text/javascript" charset="utf-8" src="/fanfou/jquery-1.7.min.js"></script>
+        <link rel="stylesheet" href="/fanfou/base.css" type="text/css" media="screen" charset="utf-8">
+        <style type="text/css">
+      body { background-color:#3a9dcf; background-image:url(http://static.fanfou.com/img/bg/10.png); background-repeat:no-repeat; background-attachment:fixed; background-position:top left; color:#4b585e;}a, #sidebar a:hover, .pagination .more:hover, .stamp a:hover, .light .stamp a { color:#3a9dcf;}a:hover, .light .stamp .reply a { background-color:#3a9dcf;}a:hover .label, a.photo:hover img, .stamp a:hover, .light .stamp a { border-color:#3a9dcf;}.actions .open-notice:hover { color:#3a9dcf;}#sidebar { background-color:#000000; border-left:1px solid #006fa6;}#sidebar .sect { border-top-color:#006fa6;}#sidebar .stabs { border-bottom-color:#006fa6;}#sidebar .stabs li.current a { color:#4b585e;}#user_stats li { border-left-color:#006fa6;}#user_stats .count { color:#4b585e;}#user_stats a:hover .count { color:#3a9dcf;}#goodapp span { color:#4b585e;}</style> 
+
+        <title>(1) 首页_饭否</title>
+        <script type="text/javascript" src="/fanfou/ga.js"></script></head>
+        <body>
+
+        <div id="container" class="newlook">
+            <div id="header">
+                <div id="navigation" class="ui-roundedbox">
+                    <div class="ui-roundedbox-corner ui-roundedbox-tl">
+                        <div class="ui-roundedbox-corner ui-roundedbox-tr">
+                            <div class="ui-roundedbox-corner ui-roundedbox-bl">
+                                <div class="ui-roundedbox-corner ui-roundedbox-br">
+                                    <div class="ui-roundedbox-content">
+                    <ul>
+                        <li><a href="/fanfou/(1) 首页_饭否.htm">首页</a></li>
+                        <li><a href="http://fanfou.com/liuxue5213">我的空间</a></li>
+                        <li><a href="http://fanfou.com/search">搜索</a></li>
+                        <li><a href="http://fanfou.com/logout/ae90292c">退出</a></li>
+                    </ul>
+                </div></div></div></div></div></div>
+            </div>
+
+
+            <div id="PopupBox" style="">
+                <div id="PopupClose" class="close"></div>
+                    <div id="PopupUpdate">
+                <p id="PopupSrc">回复：</p>
+                <form method="post" action="" class="limit" id="PopupForm"><div class="textarea-wrapper"><textarea tabindex="1" name="content" rows="3" cols="70" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea></div><div class="act"><div class="actpost"><input type="hidden" name="action" value="msg.post"><input type="hidden" name="ajax" value=""><input type="hidden" name="in_reply_to_status_id" value=""><input type="hidden" name="repost_status_id" value=""><input type="hidden" name="token" value="ae90292c"><img class="loading" src="/fanfou/ajax-indicator.gif"><input tabindex="2" type="submit" class="formbutton" title="按Ctrl+Enter键发送消息" value="发送"></div></div><p class="tip"><span class="counter">140</span></p></form></div>
+            </div>
+            <div id="PopupBackground"></div>
+            <table id="columns">
+            <tbody>
+            <tr>
+                <td id="main">
+                    <div id="phupdate">
+                        <form method="post" action="/fanfou/(1) 首页_饭否.htm" class="limit" id="message"><h2 class="slogan">你在做什么</h2><div class="textarea-wrapper"><textarea tabindex="1" name="content" rows="3" cols="70" class="qs ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea></div><div class="act"><div id="upload-wrapper" class="web-upload-photo-file-name"><input type="hidden" name="photo_base64" id="upload-base64"><div class="upload-button-wrapper"><div class="sl-file"><div class="pngfix" id="upload-button" title="上传图片"></div><input title="上传图片，最大2MB" class="sl-input-file" type="file" name="picture" id="upload-file" accept="image/jpeg,image/png,image/gif"></div><span class="ul-filename" id="upload-filename"></span><span class="upload-close-handle" title="取消上传" id="ul_close">×</span></div><div class="location-button-wrapper"><div class="sl-location"><div class="pngfix" id="location-button" title="添加地理位置"></div></div></div></div><div class="actpost"><input type="hidden" name="action" value="msg.post"><input type="hidden" name="ajax" value=""><input type="hidden" name="in_reply_to_status_id" value=""><input type="hidden" name="repost_status_id" value=""><input type="hidden" name="token" value="ae90292c"><img class="loading" src="/fanfou/ajax-indicator.gif"><input tabindex="2" type="submit" class="formbutton" title="按Ctrl+Enter键发送消息" value="发送"></div></div><p class="tip"><span class="counter">140</span></p></form>            </div>
+                        <div id="content">
+                            <div id="timeline-head" style="display:none;"></div>
+                            <div id="timeline-notification" style="display: block;"><a href="javascript:void(0);">新增 <strong id="timeline-count">1</strong> 条最新消息，点击查看</a></div>
+                            <div id="stream" class="message">
+                            <ol class="wa solo">
+                            <li class="buffered">
+                            <a href="http://fanfou.com/bash" title="Adrian要充实" class="avatar">
+                            <img src="/fanfou/kr.jpg" alt="Adrian要充实">
+                            </a>
+                            <a href="http://fanfou.com/bash" class="author">Adrian要充实</a> 
+                            <span id="efXHSgmwIXw" class="content">
+                            以及Ather是怎么从一个孤僻的人开始跟大家混在一起的 Ather对于他们的评价也只是微微一笑，说我自己评价自己肯定是有偏见的。我觉得蛮震惊的 他帮我买菜时丝毫没有辩论时的那种决绝，这跟Abhay是根本区别 我仔细地钻研起了巨蟹座的特征 他们真的好神奇 而且确实很准 比如扑朔迷离</span>
+                            <span class="stamp">
+                            <a href="http://fanfou.com/statuses/efXHSgmwIXw" class="time" title="2016-01-14 09:59" ffid="efXHSgmwIXw" stime="Thu Jan 14 01:59:16 +0000 2016">22 秒前</a> 
+                            <span class="method">通过网页</span>
+                            </span>
+                            <span class="op">
+                            <a href="http://fanfou.com/home?status=@Adrian%E8%A6%81%E5%85%85%E5%AE%9E+&in_reply_to_status_id=efXHSgmwIXw" ffname="Adrian要充实" ffid="efXHSgmwIXw" class="reply" title="回复Adrian要充实">回复Adrian要充实</a>
+                            <a href="" ffid="efXHSgmwIXw" text="转@Adrian要充实 以及Ather是怎么从一个孤僻的人开始跟大家混在一起的 Ather对于他们的评价也只是微微一笑，说我自己评价自己肯定是有偏见的。我觉得蛮震惊的 他帮我买菜时丝毫没有辩论时的那种决绝，这跟Abhay是根本区别 我仔细地钻研起了巨蟹座的特征 他们真的好神奇 而且确实很准 比如扑朔迷离" class="repost" title="转发">转发</a>
+                            </span>
+                            </li>
+
+                            <li class="unlight">
+                            <a href="http://fanfou.com/xuecaodeminiblog" title="我是你大哥" class="avatar"><img src="/fanfou/pg.jpg" alt="我是你大哥"></a>
+                            <a href="http://fanfou.com/xuecaodeminiblog" class="author">我是你大哥</a> 
+                            <span id="ZGNjigrleLc" class="content">我還以為是飯戀梗 RT@<a href="http://fanfou.com/sith" class="former">爆肚细丝儿</a> 自以为是的傻逼「@<a href="http://fanfou.com/%E9%80%89%E6%8B%A9%E5%BE%98%E5%BE%8A" class="former">徘徊君不徘徊</a> 转@<a href="http://fanfou.com/wangchu" class="former">太宰桂</a>
+                             “这次见面，对方给了我一个装满的kindle。请问这是什么意思？”」</span>
+                              <span class="stamp">
+                              <a href="http://fanfou.com/statuses/ZGNjigrleLc" class="time" title="2016-01-14 09:58" ffid="ZGNjigrleLc" stime="Thu Jan 14 01:58:45 +0000 2016">5 秒前</a>
+                               <span class="method">
+                               通过<a href="http://imach.me/gohanapp" target="_blank">「御飯 iPhone」</a>
+                              </span> 
+                              <span class="reply">
+                              <a href="http://fanfou.com/statuses/ZdCdJ2s97V4">转自太宰桂</a>
+                              </span>
+                              </span>
+                              <span class="op">
+                              <a href="http://fanfou.com/home?status=@%E6%88%91%E6%98%AF%E4%BD%A0%E5%A4%A7%E5%93%A5+&in_reply_to_status_id=ZGNjigrleLc" ffname="我是你大哥" ffid="ZGNjigrleLc" class="reply" title="回复我是你大哥">回复我是你大哥</a>
+                              <a href="http://fanfou.com/home?status=%E8%BD%AC%40%E6%88%91%E6%98%AF%E4%BD%A0%E5%A4%A7%E5%93%A5+%E6%88%91%E9%82%84%E4%BB%A5%E7%82%BA%E6%98%AF%E9%A3%AF%E6%88%80%E6%A2%97+RT%40%E7%88%86%E8%82%9A%E7%BB%86%E4%B8%9D%E5%84%BF+%E8%87%AA%E4%BB%A5%E4%B8%BA%E6%98%AF%E7%9A%84%E5%82%BB%E9%80%BC%E3%80%8C%40%E5%BE%98%E5%BE%8A%E5%90%9B%E4%B8%8D%E5%BE%98%E5%BE%8A+%E8%BD%AC%40%E5%A4%AA%E5%AE%B0%E6%A1%82+%E2%80%9C%E8%BF%99%E6%AC%A1%E8%A7%81%E9%9D%A2%EF%BC%8C%E5%AF%B9%E6%96%B9%E7%BB%99%E4%BA%86%E6%88%91%E4%B8%80%E4%B8%AA%E8%A3%85%E6%BB%A1%E7%9A%84kindle%E3%80%82%E8%AF%B7%E9%97%AE%E8%BF%99%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9F%E2%80%9D%E3%80%8D&repost_status_id=ZGNjigrleLc" ffid="ZGNjigrleLc" text="转@我是你大哥 我還以為是飯戀梗 RT @徘徊君不徘徊 转@太宰桂 “这次见面，对方给了我一个装满的kindle。请问这是什么意思？”」" class="repost" title="转发">转发</a>
+                              </span>
+                              </li>
+                            </li>
+                            </ol>
+                            </div>
+
+                            <div class="pagination">
+                            <a id="pagination-more" class="more more-left" href="http://fanfou.com/home?max_id=lYMMtRpiXjw" onclick="return false;">更多</a><a id="pagination-totop" class="more more-right" href="http://fanfou.com/home#">返回顶部</a></div>            </div>
+                        </td>
+                        <td id="sidebar">
+                            <div id="user_top">
+                            <a href="http://fanfou.com/liuxue5213"><img src="/fanfou/51.jpg" alt="超级帽子戏法"></a>
+                            <h3>超级帽子戏法</h3>
+                            </div>
+                            <ul id="reminder"></ul>
+                            <ul id="user_stats">
+                            <li>
+                                <a href="http://fanfou.com/friends/liuxue5213">
+                                    <span class="count">50</span> 
+                                    <span class="label">我关注的人</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="http://fanfou.com/followers/liuxue5213">   <span class="count">41</span> 
+                                    <span class="label">关注我的人</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="http://fanfou.com/liuxue5213">
+                                    <span class="count">1451</span> 
+                                    <span class="label">消息</span>
+                                </a>
+                            </li>
+                            </ul>
+
+                            <div class="stabs" id="navtabs">
+                                <ul>
+                                    <li id="navtabs-home" class="current"><a href="/fanfou/(1) 首页_饭否.htm"><span class="label">首页</span></a></li>
+                                    <li><a href="http://fanfou.com/mentions"><span class="label">@提到我的</span> </a></li>
+                                    <li><a href="http://fanfou.com/album/liuxue5213"><span class="label">照片</span></a></li>
+                                </ul>
+                            </div>
+
+
+                            <script type="text/javascript" charset="utf-8" src="/fanfou/home_recmduser.js"></script>
+
+
+                            <div id="friends" class="colltab">
+                                <b></b><h2>我关注的人</h2>
+                                <ul class="alist" style="display: block;">
+                                    <li>
+                                    <a href="http://fanfou.com/%E6%A9%99%E5%AD%902375" title="最后一张专辑第13首歌">
+                                        <img src="/fanfou/1x.jpg" alt="最后一张专辑第13首歌">
+                                        <span>最后一张专辑第13首歌</span>
+                                    </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                </div>
+              <!--   <script type="text/javascript">
+                        if (window.top !== window.self){
+                        setTimeout(function(){document.body.innerHTML='';}, 0);
+                        window.self.onload=function(){
+                        document.body.innerHTML='';
+                        };
+                        }
+                </script> -->
+                <script type="text/javascript" charset="utf-8" src="/fanfou/utilities.js"></script>
+                <script type="text/javascript" charset="utf-8" src="/fanfou/fanfou.js"></script>
+             
+
+                <script type="text/javascript" charset="utf-8" src="/fanfou/upload_photo.js"></script>
+                <script type="text/javascript" charset="utf-8" src="/fanfou/upload_location.js"></script>
+        
+                <script type="text/javascript">
+                YAHOO.util.Event.onDOMReady(function(){
+                FF.app.QuickReply(true);
+                FF.app.Repost();
+                FF.app.Timeline.init();
+                FF.app.Zoom.init('stream');
+                FF.app.Sidebar.init();
+                FF.widget.selectAndCopy('invite-url');
+                jQuery('#phupdate textarea.qs').focus();
+                var elTextarea = jQuery('textarea.qs')[0];
+                if (elTextarea.createTextRange) {
+                var range = elTextarea.createTextRange();
+                range.moveEnd("character", jQuery('textarea.qs').val().length);
+                range.moveStart("character",  jQuery('textarea.qs').val().length);
+                range.select();
+                } else {
+                elTextarea.setSelectionRange(jQuery('textarea.qs').val().length, jQuery('textarea.qs').val().length);
+                elTextarea.focus();
+                }
+                });
+                </script>
+    </body>
+</html>
